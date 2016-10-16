@@ -25,4 +25,11 @@
 
 
 
+## Working with storybook
+1. Run storybook server: `npm run storybook`
+
+1. Create stories: add `stories.js` file to component folder.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
