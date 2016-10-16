@@ -1,4 +1,5 @@
 import { configure } from '@kadira/storybook'
+import '../src/styles.css'
 
 
 function requireAll(requireContext) {
