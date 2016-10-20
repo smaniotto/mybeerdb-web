@@ -9,7 +9,7 @@ it('dispatch update function when input is changed', () => {
   const textInput = shallow(
     <TextInput
       changeHandler={(event) => {textInputValue = event.target.value}}
-      text={textInputValue}
+      text="Initial value"
     />
   )
 
@@ -25,5 +25,5 @@ it('dispatch update function when input is changed', () => {
   textInput.simulate('change', event)
 
   // If a change event is dispatched with new text, it should display the text value
-  expect(textInput.text()).toEqual('New value')
+  expect(textInputValue).toEqual(event.target.value)
 })
