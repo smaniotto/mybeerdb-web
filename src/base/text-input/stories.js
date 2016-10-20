@@ -1,11 +1,14 @@
 import React from 'react'
 import { storiesOf, action } from '@kadira/storybook'
 
+import decorators from '../../../.storybook/decorators'
 import TextInput from './'
 
 let text = ''
 
 storiesOf('TextInput', module)
+  .addDecorator(decorators.margins)
+  .addDecorator(decorators.maxWidth)
   .add('default', () => {
     return (
       <TextInput
