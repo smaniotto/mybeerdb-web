@@ -11,5 +11,5 @@ storiesOf('Logo', module)
   ))
   .addDecorator(decorators.darkBackground)
   .add('with dark brackground', () => (
-    <Logo variation="default-light" />
+    <Logo variety="default-light" />
   ))

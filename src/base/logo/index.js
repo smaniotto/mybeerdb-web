@@ -4,20 +4,20 @@ import './styles.css'
 
 
 const Logo = (props) => {
-  const variation = props.variation
-  let variationClass
+  const variety = props.variety
+  let varietyClass
 
-  switch(variation) {
+  switch(variety) {
     case 'default-light':
-      variationClass = 'logo--light'
+      varietyClass = 'logo--light'
       break
 
     default:
-      variationClass = ''
+      varietyClass = ''
       break
   }
 
-  return <h1 className={`logo ${variationClass}`}>My Beer DB</h1>
+  return <h1 className={`logo ${varietyClass}`}>My Beer DB</h1>
 }
 
 

@@ -11,13 +11,20 @@ const TextInput = (props) =>  {
     variety,
   } = props
 
-  let modifier = ''
-  if (variety === 'error')
-    modifier = 'input--error'
+  let varietyClass
+  switch(variety) {
+    case 'error':
+      varietyClass = 'input--error'
+      break
+
+    default:
+      varietyClass = ''
+      break
+  }
 
   return (
     <input
-      className={`input ${modifier}`}
+      className={`input ${varietyClass}`}
       type="text"
       value={text}
       placeholder={placeholder}
