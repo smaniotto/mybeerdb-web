@@ -1,13 +1,9 @@
 import React from 'react'
-import { Router, Route, browserHistory } from 'react-router'
-
-import SearchPage from './search-page'
+import { Router, browserHistory } from 'react-router'
 
 
 const Routes = () => (
-  <Router history={browserHistory}>
-    <Route path="/" component={SearchPage}></Route>
-  </Router>
+  <Router history={browserHistory} />
 )
 
 
